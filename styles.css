@@ -159,3 +159,33 @@ html{--section-blue:#426b91}html[data-theme=dark]{--section-blue:#9ab7d0}
 .background-entry .entry-date{display:inline-block;padding:3px 10px;background:var(--card-hover);border-radius:999px;white-space:nowrap;justify-self:start}
 
 .background-entry .entry-date{font-size:11px;line-height:1.5;padding:2px 8px}
+
+
+/* Roomier desktop layout and readable text at normal browser zoom. */
+@media(min-width:741px){
+ .page-shell,.nav-shell{max-width:1120px}
+ .wordmark{font-size:21px}
+ .nav-shell nav a{font-size:16px}
+ .biography p:not(.eyebrow){font-size:18px;line-height:1.8}
+ .news-row{font-size:16px}
+ .news-row time{font-size:14px}
+ .text-button,.contribution-legend{font-size:14px}
+ .paper{grid-template-columns:340px minmax(0,1fr)}
+ .paper h3{font-size:22px}
+ .authors{font-size:14px}
+ .paper-description{font-size:16px}
+ .paper-venue,.author-note{font-size:13px}
+ .pill{font-size:14px}
+ .year-heading{font-size:15px}
+ .profile-name{font-size:18px}
+ .profile-role{font-size:16px}
+ .profile-institution{font-size:17px}
+ .background-entry h4{font-size:17px}
+ :is(#experience-list,#education-list,#award-list) .entry-role{font-size:16px}
+ .background-entry .entry-date{font-size:12px}
+ .footer{font-size:12px}
+}
+/* Pointer clicks should not draw a blue ring around the enlarged card. */
+.card-zoom:focus{outline:none}
+.card-zoom.pointer-open .card-zoom-close:focus{outline:none}
+#research article.paper:focus:not(:focus-visible){outline:none}

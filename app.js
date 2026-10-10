@@ -105,7 +105,7 @@
   let zoomSourceVideo=null;
   let resumeSourceVideo=false;
   let previousOverflow='';
-  const openCardZoom=card=>{
+  const openCardZoom=(card,fromKeyboard=false)=>{
     if(window.innerWidth<=740||cardZoom.open)return;
     const enlarged=card.cloneNode(true);
     enlarged.removeAttribute('id');
@@ -128,6 +128,7 @@
     zoomContent.replaceChildren(enlarged);
     previousOverflow=document.body.style.overflow;
     document.body.style.overflow='hidden';
+    cardZoom.classList.toggle('pointer-open',!fromKeyboard);
     cardZoom.showModal();
   };
   const researchCards=[...document.querySelectorAll('#research article.paper')];
@@ -151,11 +152,12 @@
       openCardZoom(card);
     });
     card.addEventListener('keydown',event=>{
-      if(event.target===card&&(event.key==='Enter'||event.key===' ')){event.preventDefault();openCardZoom(card)}
+      if(event.target===card&&(event.key==='Enter'||event.key===' ')){event.preventDefault();openCardZoom(card,true)}
     });
   });
   syncCardExpansion();
   window.addEventListener('resize',syncCardExpansion);
+  cardZoom.addEventListener('keydown',()=>cardZoom.classList.remove('pointer-open'));
   cardZoom.querySelector('.card-zoom-close').addEventListener('click',()=>cardZoom.close());
   cardZoom.addEventListener('click',event=>{
     if(event.target!==cardZoom)return;
