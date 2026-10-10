@@ -50,7 +50,7 @@ window.PORTFOLIO = {
     },
     {
       "date": "Feb 2025",
-      "text": "I returned to the <strong>Centre de Visió per Computador</strong> as a research intern, supported by an <strong>Elena Maseras fellowship</strong>, to work on fixation-guided visual attention for my bachelor’s thesis."
+      "text": "I started a second research internship at the <strong>Centre de Visió per Computador</strong>, supported by the <strong>Elena Maseras Research Fellowship</strong>, working on fixation-guided visual attention."
     },
     {
       "date": "Sep 2024",
