@@ -245,6 +245,11 @@ window.PORTFOLIO = {
       "detail": "Recognising the best academic records across all engineering degrees at Universitat Autònoma de Barcelona, awarded to the top four students in 2025."
     },
     {
+      "title": "Extraordinary Bachelor’s Degree Award (Premi Extraordinari de Titulació)",
+      "date": "Nov 2025",
+      "detail": "Universitat Autònoma de Barcelona · Awarded for the best academic record in the bachelor’s degree in Artificial Intelligence."
+    },
+    {
       "title": "Elena Maseras Research Fellowship",
       "date": "Feb 2025",
       "detail": "A research fellowship supporting advanced study of state-of-the-art techniques in computer vision and artificial intelligence."

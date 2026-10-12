@@ -23,7 +23,7 @@
   };
   const icon = name => `<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons.arrow}</svg>`;
   const external = (url, label, cls='') => `<a class="${cls}" href="${escape(safeUrl(url))}"${/^https?:/.test(url) ? ' target="_blank" rel="noopener noreferrer"' : ''}>${label}</a>`;
-  document.title = `${data.name} · Research`;
+  document.title = data.name;
   byId('nav-name').textContent = data.name;
   byId('profile-name').textContent = data.name;
   document.querySelector('.portrait-caption').textContent = 'YOUR PHOTO HERE';
