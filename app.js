@@ -67,7 +67,7 @@
     : `<img src="${escape(safeUrl(paper.image))}" alt="${escape(paper.alt)}" loading="lazy">`;
   const authorList = (authors, boldNames=[data.name]) => String(authors || '').split(',').map(author => {
     const text = author.trim();
-    const name = text.replace(/[*†]+$/, '');
+    const name = text.replace(/[*†‡]+$/, '');
     const marks = text.slice(name.length);
     return boldNames.includes(name) ? `<strong>${escape(name)}</strong>${escape(marks)}` : escape(text);
   }).join(', ');

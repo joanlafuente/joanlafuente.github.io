@@ -4,7 +4,7 @@ window.PORTFOLIO = {
   "name": "Joan Lafuente Baeza",
   "introductionName": "Joan",
   "initials": "JL",
-  "role": "MSc in Data Science",
+  "role": "Master’s student in Data Science",
   "institution": "ETH Zürich",
   "portrait": "assets/portrait.jpeg",
   "email": "jlafuente@student.ethz.ch",
@@ -102,8 +102,8 @@ window.PORTFOLIO = {
       "year": "2024",
       "venue": "ICDAR 2024",
       "title": "Multimodal Transformer for Comics Text-Cloze",
-      "authors": "Emanuele Vivoli*, Joan Lafuente Baeza*, Ernest Valveny Llobet, Dimosthenis Karatzas",
-      "description": "A Multimodal-LLM for a comics text-cloze task, improving accuracy by 10% over existing models through a domain-adapted visual encoder and new OCR annotations, and extend the task to a generative format.",
+      "authors": "Emanuele Vivoli‡, Joan Lafuente Baeza‡, Ernest Valveny Llobet, Dimosthenis Karatzas",
+      "description": "A VL-T5 multimodal Transformer for comics text-cloze, with a domain-adapted visual encoder and new OCR annotations, extending the task to a generative setting.",
       "image": "assets/comics-task-balanced.png",
       "alt": "Multimodal Transformer text-cloze task diagram showing comic context panels, a masked question panel, answer options, and text generation",
       "paper": "https://doi.org/10.1007/978-3-031-70552-6_8",
@@ -121,8 +121,8 @@ window.PORTFOLIO = {
       "category": "teaching"
     },
     {
-      "name": "CVG & Gradient Spaces Lab",
-      "detail": "Research project · Zürich, Switzerland",
+      "name": "CVG, ETH Zürich & Gradient Spaces Lab, Stanford",
+      "detail": "Student Researcher · Zürich, Switzerland",
       "date": "Feb 2026–Present",
       "summary": "Large-scale video diffusion models for abstract visual reasoning. Distributed multi-GPU training supported by a Swiss AI Initiative Small Project compute grant.",
       "category": "research"
@@ -237,7 +237,7 @@ window.PORTFOLIO = {
     {
       "title": "Swiss AI Initiative Small Project Compute Grant",
       "date": "April 2026",
-      "detail": "CSCS · 10,000 compute hours supporting research on video diffusion models for abstract visual reasoning."
+      "detail": "We were awarded 10,000 compute hours at CSCS for our research on video diffusion models for abstract visual reasoning."
     },
     {
       "title": "Best Academic Record distinction across all UAB engineering degrees",
